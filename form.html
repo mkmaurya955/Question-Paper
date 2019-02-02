@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUESTION PAPER GENERATOR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-color: silver">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color: #e3f2fd;" role="navigation">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Automatic Paper Generator</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="insertques.php"><span class="glyphicon glyphicon-question-sign"></span>Add Questions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <div class="container" style="margin-top: 120px; align: center ">
+        <form action="next.php" method="POST">
+            <table border="1" width="500" align="center" style="background-color: lightblue">
+                <tr>
+                    <td colspan="2" style="text-align: center;font-family: "Times New Roman"><h1>Generate Question Paper</h1></td>
+                </tr>
+	
+                <tr>
+	               <td style="padding: 10px">TITLE:</td>
+	               <td style="padding: 10px"><input type="text" name="title" style="color:grey;"></td>
+	            </tr>
+
+	            <tr>
+                    <td style="padding: 10px">TOTAL MARKS:</td>
+	                <td style="padding: 10px"><input type="text" name="total" style="color:grey;"></td>
+	            </tr>
+
+                <tr>
+                    <td style="padding: 10px">NO OF QUESTIONS:</td>
+	                <td style="padding: 10px"><input type="text" name="noq" style="color:grey;"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center" style="padding: 10px"><input class="btn btn-primary" type="submit" value="Submit" style="color:black;"></td>
+                </tr>
+            </table>
+        </form>
+	</div>
+    <br><br><br><br><br><br><br>
+	<hr>
+</body>
+</html>
